@@ -1,1 +1,0 @@
-This will be the repo for 1st semester web technologies course.
