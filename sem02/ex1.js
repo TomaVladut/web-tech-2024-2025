@@ -15,3 +15,8 @@ let concat = (cars) => {
     return result;
 }
 console.log(concat(cars));
+
+//js way
+let countries = ['USA', 'Bulgaria', 'Poland', 'Armenia'];
+let result = (countries) => countries.join('');
+console.log(result(countries));
