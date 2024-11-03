@@ -1,1 +1,1 @@
-This will be the repo for 1st semester web technologies course.
+This will be my repo for 1st semester web technologies course.
