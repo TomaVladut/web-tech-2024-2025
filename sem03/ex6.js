@@ -47,3 +47,31 @@ const sortObjects = (array, key) => {
 }
 
 console.log(sortObjects(cars,'price'));
+
+
+//Write a function that groups an array of objects by a specified property and returns an object where the keys are 
+//the property values and the values are arrays of objects that share that property.
+
+const people = [
+    { name: 'John', age: 25, city: 'New York' },
+    { name: 'Jane', age: 22, city: 'Chicago' },
+    { name: 'Sam', age: 25, city: 'New York' },
+    { name: 'Anna', age: 30, city: 'Chicago' },
+    { name: 'Mark', age: 22, city: 'Boston'},
+    { name: 'John', age: 25, city: 'New York'}
+];
+
+const groupBy = (array, property) => {
+    return array.reduce((prev, current) => {
+        const key = current[property];
+        if(key)
+        {
+            if(!prev[key])
+                prev[key] = [];
+            prev[key].push(current);
+        }
+        return prev;
+    }, {});
+}
+
+console.log(groupBy(people,'city'));
