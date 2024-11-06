@@ -62,7 +62,6 @@ console.log('number of streams created: ', Stream.count);
 class EvenSequence
 {
     #value;
-    #next;
 
     constructor(value)
     {
